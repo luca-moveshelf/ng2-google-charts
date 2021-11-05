@@ -1,6 +1,6 @@
 {
-  "name": "ng2-google-charts",
-  "version": "0.0.0",
+  "name": "ng2-google-charts-safe-options",
+  "version": "0.0.1",
   "scripts": {
     "compodoc": "cd projects/ng2-google-charts && compodoc -c .compodocrc.yml",
     "prod-lib": "rm -fr dist && ng build --prod ng2-google-charts",
@@ -12,7 +12,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~9.1.11",
     "@angular/common": "~9.1.11",

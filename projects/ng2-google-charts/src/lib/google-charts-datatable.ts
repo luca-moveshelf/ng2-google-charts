@@ -98,7 +98,7 @@ export class GoogleChartsDataTable {
 
   constructor(private opt: GoogleChartsDataTableInterface) {
     if (opt) {
-      this._setDataTable(opt.dataTable, opt.firstRowIsData);
+      this._setDataTable(opt.dataTable, opt?.firstRowIsData);
     }
   }
 
@@ -156,7 +156,7 @@ export class GoogleChartsDataTable {
 
   public setDataTable(dt: any, firstRowIsData?: boolean) {
     if (firstRowIsData === undefined) {
-      firstRowIsData = this.opt.firstRowIsData;
+      firstRowIsData = this.opt?.firstRowIsData;
     }
     this._setDataTable(dt, firstRowIsData);
     this.dataTableChanged.emit(this.dataTable);

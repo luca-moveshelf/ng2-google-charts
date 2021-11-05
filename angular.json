@@ -159,6 +159,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng2-google-charts"
+    }
+  },
+  "defaultProject": "ng2-google-charts",
+  "cli": {
+    "analytics": false
+  }
 }

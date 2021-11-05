@@ -106,7 +106,7 @@ export class GoogleChartComponent implements OnInit {
 
       // see dataTable in https://developers.google.com/chart/interactive/docs/reference#google.visualization.drawchart
       let temp: GoogleChartInterface = this.data;
-      if (this.data.firstRowIsData) {
+      if (this.data?.firstRowIsData) {
         temp = Object.assign(temp, this.data);
         temp.dataTable = this.dataTable.getDataTable();
       }
