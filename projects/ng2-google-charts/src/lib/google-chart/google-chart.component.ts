@@ -84,7 +84,7 @@ export class GoogleChartComponent implements OnInit {
     if (Object.isExtensible(this.data)) {
       this.data.component = this;
     }
-    this.options = this.data.options;
+    this.options = this.data?.options;
 
     this.init().then(() => {
       this.draw();
@@ -187,9 +187,9 @@ export class GoogleChartComponent implements OnInit {
       const column = item.column;
       const series = this.getSeriesByColumn(column);
       const row = item.row;
-      let seriesType = this.options.seriesType;
-      if (this.options.series && this.options.series[series] && this.options.series[series].type) {
-        seriesType = this.options.series[series].type;
+      let seriesType = this.options?.seriesType;
+      if (this.options?.series && this.options?.series[series] && this.options?.series[series].type) {
+        seriesType = this.options?.series[series].type;
       }
       if (seriesType) {
         let selector = this.getSelectorBySeriesType(seriesType);
